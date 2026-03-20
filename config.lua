@@ -56,6 +56,9 @@ Config.AllowedCharacterGroups = { "admin", "event" }
 Config.GrafanaPosition = { -- if you host a Grafana and want to see where this was withough having to log in! If Ludwig Developement makes profit i will host one for you too see withouth hosting your own.
   enabled = true,
   name = "🔎 check Position",
-  urlTemplate =
-  "https://sns-grafana.your-networks.de/d/a6d4803c-dc54-4a0b-b0a0-28bf7841725e/positionssuche?orgId=1&from=now-6h&to=now&timezone=browser&var-coordinates=%.2f,%.2f,%.2f"
+  urlTemplate = function(x, y, z)
+    return string.format(
+      "https://sns-grafana.snsrp.de/d/positionssuche?orgId=1&from=now-6h&to=now&timezone=browser&var-coordinates=%.2f,%.2f,%.2f",
+      x, y, z)
+  end
 }

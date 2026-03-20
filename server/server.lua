@@ -282,8 +282,7 @@ function LudwigLoggingSolo(source, icon, color, action, data, message)
 
   if coords and Config.GrafanaPosition.enabled then
     local x, y, z = coords.x or 0, coords.y or 0, coords.z or 0
-    local template = Config.GrafanaPosition.urlTemplate
-    local generatedUrl = template and string.format(template, x, y, z) or nil
+    local generatedUrl = Config.GrafanaPosition.urlTemplate(x, y, z)
     local linkLabel = Config.GrafanaPosition.name or "Check Position"
 
     if generatedUrl then
