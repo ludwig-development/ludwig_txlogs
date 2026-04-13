@@ -53,7 +53,7 @@ Config.Servers = {
 
 Config.AllowedCharacterGroups = { "admin", "event" }
 
-Config.GrafanaPosition = { -- if you host a Grafana and want to see where this was withough having to log in! If Ludwig Developement makes profit i will host one for you too see withouth hosting your own.
+Config.GrafanaPosition = { -- if you host a Grafana and want to see where this was withough having to log in! If Ludwig Development makes profit i will host one for you too see withouth hosting your own.
   enabled = true,
   name = "🔎 check Position",
   urlTemplate = function(x, y, z)
