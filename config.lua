@@ -6,7 +6,7 @@ Config.Language = "en"    -- available: "en", "de"
 
 Config.Framework = "vorp" -- available: "vorp", "rsg"
 
-Config.AllowedGroups = { "admin" }
+Config.AllowedGroups = { "admin", "event" }
 
 Config.Webhook = {
   url = '',
@@ -45,13 +45,11 @@ Config.Pings = {
 
 Config.Servers = {
   dev = {
-    identifyBy = "development", -- a String in the Servername so Server can be identified
+    identifyBy = "development", -- a String in the Servername so Development Server can be identified (no logging there)
     name = "[DEV]"              -- how to name in logs, Dev Server only logs if Config.Debug = true
   },
   live = { name = "[LIVE]" }
 }
-
-Config.AllowedCharacterGroups = { "admin", "event" }
 
 Config.GrafanaPosition = { -- if you host a Grafana and want to see where this was withough having to log in! If Ludwig Development makes profit i will host one for you too see withouth hosting your own.
   enabled = true,

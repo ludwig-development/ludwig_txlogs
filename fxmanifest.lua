@@ -15,3 +15,5 @@ server_scripts {
     'bridges/**',
     'server/server.lua'
 }
+
+github_link "https://github.com/ludwig-development/ludwig_txlogs"
