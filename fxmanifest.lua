@@ -4,7 +4,7 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 description 'TX Admin logging system via discord webhook'
 
 author 'Ludwig Development'
-version '0.1.0'
+version '0.1.1'
 
 lua54 'yes'
 
